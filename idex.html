@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unified IT Platform</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #003366;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #003366;
+    }
+
+    .card ul {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+
+    .card ul li {
+      padding: 0.3rem 0;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: "✔️";
+      position: absolute;
+      left: -1rem;
+      color: green;
+    }
+
+    .card ul li.pending::before {
+      content: "🚧";
+      color: orange;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Unified Platform for IT Departments - Engineering Colleges</h1>
+  </header>
+
+  <section>
+    <div class="section-title">🎯 Core Purpose</div>
+    <p>
+      A centralized platform to streamline academic content, placement preparation,
+      community engagement, and student-faculty-TPO interaction for engineering IT departments.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">🔐 Key Features by Role</div>
+    <div class="grid">
+
+      <div class="card">
+        <h3>👨‍🎓 Student</h3>
+        <ul>
+          <li>View/download resources</li>
+          <li>Subject materials & quizzes</li>
+          <li>Coding practice & contests</li>
+          <li>Placement preparation tests</li>
+          <li>Request mock interviews</li>
+          <li>Join community discussions</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>👩‍🏫 Faculty</h3>
+        <ul>
+          <li>Upload course materials</li>
+          <li>Create quizzes</li>
+          <li class="pending">Monitor student progress</li>
+          <li>Conduct mock interviews</li>
+          <li>Answer forum questions</li>
+          <li>Post announcements</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🏢 TPO</h3>
+        <ul>
+          <li>Manage company profiles</li>
+          <li>Schedule placement drives</li>
+          <li>Create placement tests</li>
+          <li class="pending">View performance analytics</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🧑‍💼 Alumni</h3>
+        <ul>
+          <li>Update work experience</li>
+          <li>Share company reviews</li>
+          <li>Offer mentorship</li>
+          <li>Share job referrals</li>
+          <li>Post industry updates</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>👨‍💻 Admin</h3>
+        <ul>
+          <li>User management</li>
+          <li>Role assignment</li>
+          <li>Content moderation</li>
+          <li>System monitoring</li>
+          <li class="pending">Analytics dashboard</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">🛠️ Technical Implementation</div>
+    <ul>
+      <li><strong>Frontend:</strong> React + TypeScript + Shadcn UI</li>
+      <li><strong>Backend:</strong> Express.js with TypeScript</li>
+      <li><strong>Database:</strong> PostgreSQL + Drizzle ORM</li>
+      <li><strong>Authentication:</strong> JWT with Role-based Access</li>
+      <li><strong>File Storage:</strong> Enabled for uploads</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-title">📈 Current Status</div>
+    <ul>
+      <li>✅ User Authentication</li>
+      <li>✅ Academic Resource Management</li>
+      <li>✅ Basic Coding Platform</li>
+      <li>✅ Company Profile Management</li>
+      <li>✅ Forum/Q&A System</li>
+      <li>✅ Admin Dashboard</li>
+      <li>🚧 Advanced Analytics</li>
+      <li>🚧 Mentorship System</li>
+      <li>🚧 Contest Management</li>
+      <li>🚧 Real-time Notifications</li>
+      <li>🚧 Mobile Responsiveness</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Unified IT Platform | Built for Engineering Colleges
+  </footer>
+
+  <script>
+    // You can expand functionality with JavaScript here later
+    console.log("Platform structure loaded successfully!");
+  </script>
+</body>
+</html>
